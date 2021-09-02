@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #cbc5ae; }
+
+:root {
+  --border-radius: 250px; }
+
+#upper-header {
+  height: 60vh;
+  background-color: #c8583e;
+  position: relative; }
+
+#upper-header-overlay {
+  position: absolute;
+  height: 60vh;
+  width: 100vw;
+  background-color: #cbc5ae;
+  border-bottom-right-radius: var(--border-radius); }
+
+#lower-header {
+  background-color: #c8583e;
+  height: 40vh;
+  border-top-left-radius: var(--border-radius); }
+
+#about {
+  height: 100vh; }

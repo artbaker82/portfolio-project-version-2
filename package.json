@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-v.2",
+  "version": "1.0.0",
+  "description": "Second prototype of my portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch -o styles/ styles/"
+  },
+  "author": "Arthur Baker",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

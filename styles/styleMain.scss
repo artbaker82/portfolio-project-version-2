@@ -1,0 +1,42 @@
+$color-primary: #cbc5ae;
+$color-accent: #c8583e;
+$header-font: "Lato", sans-serif;
+$text-font: "Oswald", sans-serif;
+
+* {
+  box-sizing: border-box;
+  //border: 1px solid;
+}
+
+body {
+  margin: 0;
+  background-color: $color-primary;
+}
+
+:root {
+  --border-radius: 250px;
+}
+
+#upper-header {
+  height: 60vh;
+  background-color: $color-accent;
+  position: relative;
+}
+
+#upper-header-overlay {
+  position: absolute;
+  height: 60vh;
+  width: 100vw;
+  background-color: $color-primary;
+  border-bottom-right-radius: var(--border-radius);
+}
+
+#lower-header {
+  background-color: $color-accent;
+  height: 40vh;
+  border-top-left-radius: var(--border-radius);
+}
+
+#about {
+  height: 100vh;
+}
