@@ -5,6 +5,51 @@ body {
   margin: 0;
   background-color: #cbc5ae; }
 
+#nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #cbc5ae;
+  width: 100vw;
+  z-index: 100;
+  transition-duration: 500ms; }
+
+.show-background {
+  background-color: #575343; }
+
+#nav-left {
+  flex: 2; }
+
+#nav-right {
+  display: flex;
+  flex: 5;
+  flex-direction: row;
+  transition-duration: 500ms; }
+
+#nav-right .nav-item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+
+#nav-right .nav-item:hover {
+  background-color: #c8583e;
+  border-radius: 1.5rem; }
+
+#nav-right .nav-item a {
+  align-self: center;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 1.9rem; }
+
+#nav-right .nav-item a:hover {
+  border-bottom: 2px solid; }
+
 :root {
   --border-radius: 250px; }
 

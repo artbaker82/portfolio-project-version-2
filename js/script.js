@@ -1,3 +1,9 @@
+//gobal DOM elements
+const nav = document.getElementById("nav-wrapper");
+const navRight = document.getElementById("nav-right");
+const navLinks = document.querySelectorAll(".nav-link");
+console.log(navLinks);
+
 const computeNewRadiusDown = (x) => {
   //convert array of css property values for radius to an integer
   let radius = x
@@ -46,5 +52,23 @@ window.onload = () => {
 
     scrollPos = document.body.getBoundingClientRect().top;
     console.log(scrollPos);
+
+    if (scrollPos <= -30) {
+      //shrink
+      nav.style.setProperty("background-color", "#575343");
+      nav.style.setProperty("height", "10vh");
+      navRight.style.setProperty("flex", "2");
+      navLinks.forEach((link) => {
+        link.style.setProperty("font-size", "1.4rem");
+      });
+    } else {
+      //grow
+      nav.style.setProperty("background-color", "#cbc5ae");
+      nav.style.setProperty("height", "15vh");
+      navRight.style.setProperty("flex", "5");
+      navLinks.forEach((link) => {
+        link.style.setProperty("font-size", "1.9rem");
+      });
+    }
   });
 };
